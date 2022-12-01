@@ -9,6 +9,6 @@
   "region": "us-east-1",
   "configuration": "Release",
   "s3-prefix": "LambdaSample.Three/",
-  "template": "serverless.template",
+  "template": "..\\template.yaml",
   "template-parameters": ""
 }

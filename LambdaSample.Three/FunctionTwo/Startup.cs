@@ -1,4 +1,4 @@
-namespace LambdaSample.Three;
+namespace LambdaSample.Three.FunctionTwo;
 
 public class Startup
 {
@@ -32,9 +32,10 @@ public class Startup
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllers();
-            endpoints.MapGet("/", async context =>
+            
+            endpoints.MapGet("/two/", async context =>
             {
-                await context.Response.WriteAsync("Welcome to running ASP.NET Core on AWS Lambda");
+                await context.Response.WriteAsync("Welcome to running ASP.NET Core on AWS Lambda -- Function 2");
             });
         });
     }
